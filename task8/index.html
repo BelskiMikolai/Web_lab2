@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li.form{
+            margin-bottom:1%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Запись на курс</h1>
+    </header>
+    <main>
+        <hr>
+        <form method="post" action="#">
+            <ul>
+                <li class="form">
+                    <label for="user_name">Имя:</label><br>
+                    <input name="user_name" id="user_name" type="text" required maxlength="20" placeholder="Ваше имя">
+                </li>
+                <li class="form">
+                    <p>Язык программирования:</p>
+                    <ul>
+                        <li>              
+                            <label><input name="ratio" type="radio">C++</label>
+                        </li>
+                        <li>
+                            <label><input name="ratio" type="radio" >PHP</label>
+                        </li>
+                        <li>
+                            <label><input name="ratio" type="radio">Java</label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="form">
+                    <label for="extra" >Дополнительная информация</label><br>
+                    <textarea cols="30" rows="3" name="extra" id="extra" >Начальный уровень</textarea>
+                </li>
+                <li class="form">
+                    <label for="user_pas">Секретное слово:</label><br>
+                    <input name="user_pas" id="user_pas" type="password" required autocomplete="off" maxlength="20" placeholder="Пароль"><br>
+                    <button type="submit">Регистрация</button>
+                    <button type="reset">Очистить</button>
+                </li>
+            </ul>
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <p><i>bsuir.by</i></p>
+    </footer>
+</body>
+</html>

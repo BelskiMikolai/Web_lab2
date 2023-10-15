@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 9</title>
+    <style>
+        legend{
+            font-size: 18px;
+            font-weight: bold;
+            font-variant: small-caps;
+        }
+        fieldset{
+            padding: 1%;
+            width: 25%;
+        }
+        button{
+            padding: 0.5%;
+            margin-top: 1%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="#">
+            <fieldset>
+                <legend>Выберете любимый фрукт</legend>
+                <label for="fruit">Фрукт</label>
+                <input list="fruits" name="fruit" id="fruit">
+                <datalist id="fruits">
+                    <option>Ананас</option>
+                    <option>Абрикос</option>
+                    <option>Арбуз</option>
+                    <option>Авокадо</option>
+                    <option>Апельсин</option>
+                </datalist>
+            </fieldset>
+            <button type="submit" >Отправить информацию</button>
+        </form>
+    </main>
+</body>
+</html>
